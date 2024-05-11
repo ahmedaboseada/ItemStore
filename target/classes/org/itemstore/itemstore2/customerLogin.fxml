@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.itemstore.itemstore2.CustomerLoginController">
+   <children>
+      <Label fx:id="loginTitleCustomer" layoutX="232.0" layoutY="14.0" text="Customer Login">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelusername" layoutX="14.0" layoutY="89.0" text="Username:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelpassword" layoutX="14.0" layoutY="135.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="93.0" layoutY="86.0" />
+      <TextField fx:id="shownPassword" layoutX="93.0" layoutY="131.0" visible="false" />
+      <PasswordField fx:id="hiddenPassword" layoutX="93.0" layoutY="131.0" />
+      <Button fx:id="loginButton" layoutX="274.0" layoutY="175.0" mnemonicParsing="false" onAction="#loginProcess" text="Login" />
+      <Label fx:id="forgotPasswordLabel" layoutX="79.0" layoutY="201.0" text="Forgot password?" visible="false" />
+      <Button fx:id="forgotPasswordButton" layoutX="94.0" layoutY="228.0" mnemonicParsing="false" onAction="#forgotPasswordAttributesShow" text="Press me" visible="false" />
+      <Label fx:id="nationalIDLabel" layoutX="14.0" layoutY="263.0" text="National ID:" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nationalIDTextBox" layoutX="99.0" layoutY="283.0" visible="false" />
+      <Label fx:id="newPasswordLabel" layoutX="14.0" layoutY="309.0" text="New Password:" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newPasswordTextBox" layoutX="99.0" layoutY="329.0" visible="false" />
+      <Button fx:id="newPasswordButtonSubmit" layoutX="271.0" layoutY="361.0" mnemonicParsing="false" onAction="#changePassword" text="Submit" visible="false" />
+      <CheckBox fx:id="showPasswordCheckBox" layoutX="249.0" layoutY="137.0" mnemonicParsing="false" onAction="#passwordVisibility" text="show" />
+      <Label fx:id="changedPasswordAlert" layoutX="283.0" layoutY="210.0" text="Label" visible="false" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMainPanel" text="Back" />
+   </children>
+</AnchorPane>
